@@ -16,6 +16,7 @@ pmd:
 BUILD SUCCESSFUL
 Total time: 1 second
 ```
+![Apex Scan output](./demo/apex-scanout.png)
 
 #### Java
 ```bash
@@ -28,3 +29,5 @@ BUILD SUCCESSFUL
 Total time: 1 seconds
 
 ```
+
+![Java Scan output](./demo/java-scanout.png)
