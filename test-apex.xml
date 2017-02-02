@@ -1,7 +1,6 @@
 <project name="codeScanProject_apex" default="pmd" basedir=".">
-  <description>
-    simple example build file
-  </description>
+  <description>PMD code scan for Salesforce Apex </description>
+
 
 <path id="lib.path.ref">
     <fileset dir="./lib" includes="*.jar"/>

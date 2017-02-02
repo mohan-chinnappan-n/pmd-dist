@@ -2,7 +2,7 @@
 
 - Salesforce Apex
 - Java
-
+- Javascript
 
 #### Apex
 ```bash
@@ -31,3 +31,19 @@ Total time: 1 seconds
 ```
 
 ![Java Scan output](./demo/java-scanout.png)
+
+
+
+#### Javascript
+```bash
+bash run_js_scan_ant.sh
+Buildfile: /Users/mchinnappan/code-scan-tools/pmd-dist/test-js.xml
+
+pmd:
+
+BUILD SUCCESSFUL
+Total time: 1 seconds
+
+```
+
+![Java Scan output](./demo/js-scanout.png)
