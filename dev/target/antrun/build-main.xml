@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo>PMD specific tasks: cleaning generated markdown</echo>
+  <delete quiet="true">
+    <fileset includes="**/*.md" dir="/Users/mchinnappan/code-scan-tools/pmd/src/pmd-master/pmd-apex/src/site/markdown/rules/"/>
+    <fileset includes="mergedruleset.xml" dir="/Users/mchinnappan/code-scan-tools/pmd/src/pmd-master/pmd-apex/src/site/markdown/"/>
+    <fileset includes="site.xml" dir="/Users/mchinnappan/code-scan-tools/pmd/src/pmd-master/pmd-apex/src/site/"/>
+  </delete>
+</target>
+</project>

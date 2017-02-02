@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.422" tests="130" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/mchinnappan/code-scan-tools/pmd/src/pmd-master"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/mchinnappan/code-scan-tools/pmd/src/pmd-master"/>
+    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/k0/cdwjm16d2vx037lf06ch8fqr81jqk6/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.3.9/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/mchinnappan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.11.6"/>
+    <property name="user.home" value="/Users/mchinnappan"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="mchinnappan"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.3.9/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="/Users/mchinnappan/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.3.9/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="ApexBadCrypto::0 Apex Crypto hardcoded IV" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexBadCrypto::1 Apex Crypto hardcoded key" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexBadCrypto::2 Apex Crypto Safe Random IV" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexBadCrypto::3 Apex Crypto Safe Random IV" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.007"/>
+  <testcase name="ApexBadCrypto::4 Apex Crypto Non safe Key" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexCRUDViolation::0 Proper CRUD,FLS via upsert" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.008"/>
+  <testcase name="ApexCRUDViolation::1 No CRUD check for inline upsert" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::2 VF built-in CRUD checks via getter" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.005"/>
+  <testcase name="ApexCRUDViolation::3 Bypassing VF built-in CRUD checks via getter method" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::4 No VF provided CRUD checks via getter method" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::5 Proper CRUD checks" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexCRUDViolation::6 No CRUD,FLS via sObject property" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::7 Proper FLS check" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::8 Proper FLS fall-through check" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexCRUDViolation::9 Improper accessibility CRUD" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexCRUDViolation::10 Proper accessibility CRUD,FLS" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexCRUDViolation::11 Proper CRUD,FLS via property" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexCRUDViolation::12 No CRUD,FLS via sObject property, write is not protected" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.005"/>
+  <testcase name="ApexCRUDViolation::13 No CRUD,FLS for List insertion" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::14 Proper CRUD,FLS for List insertion" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexCRUDViolation::15 No CRUD,FLS via String property" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::16 Proper CRUD,FLS via upsert" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::17 Partial CRUD,FLS via upsert" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::18 No CRUD,FLS via upsert" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.005"/>
+  <testcase name="ApexCRUDViolation::19 Improper CRUD,FLS via ESAPI 1" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::20 Proper CRUD,FLS via ESAPI" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::21 Improper CRUD,FLS via ESAPI 2" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::22 CRUD,FLS check for update" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.005"/>
+  <testcase name="ApexCRUDViolation::23 No CRUD,FLS check for update" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexCRUDViolation::24 Proper CRUD,FLS check for update" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.005"/>
+  <testcase name="ApexCRUDViolation::25 No CRUD check for insert" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexCRUDViolation::26 Proper CRUD check for insert" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexCRUDViolation::27 No CRUD check for delete" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::28 Proper CRUD check for delete" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::29 Proper CRUD check for a list of sObject" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::30 No issues found in test classes" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexCRUDViolation::31 Control flow based CRUD,FLS check" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::32 Control flow based CRUD,FLS check recursive" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexCRUDViolation::33 Control flow constructor based CRUD,FLS check" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::34 Control flow accessibility CRUD check" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::35 Control flow substitute CRUD check" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCRUDViolation::36 Forgot to call the CRUD check" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.005"/>
+  <testcase name="ApexCRUDViolation::37 Control flow substitute CRUD check should fail when check follows SOQL" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexCRUDViolation::38 Control flow with nested statementsL" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexCSRF::0 Apex CSRF in constructor" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexCSRF::1 Apex CSRF in init method" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCSRF::2 Apex CSRF in init method" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexCSRF::3 Apex CSRF in constructor" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexDangerousMethods::0 Apex dangerous FileForce method" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexDangerousMethods::1 Apex non FileForce method" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexDangerousMethods::2 Apex logging sessions" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexDangerousMethods::3 Apex logging passcode" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexDangerousMethods::4 Apex logging boolean values of properties" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexDangerousMethods::5 Apex logging boolean values of class variables" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexDangerousMethods::6 Apex logging boolean values of variables" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexInsecureEndpoint::0 Insecure callout endpoint variable concat" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexInsecureEndpoint::1 Insecure callout endpoint" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexInsecureEndpoint::2 Secure callout endpoint" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexInsecureEndpoint::3 Insecure callout endpoint from a variable 1" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexInsecureEndpoint::4 Insecure callout endpoint from a variable 2" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexInsecureEndpoint::5 Insecure callout endpoint from a variable 3" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexOpenRedirect::0 PageReference open redirect with unsafe variable 			concatenation" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexOpenRedirect::1 PageReference open redirect with variable" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexOpenRedirect::2 PageReference open redirect with variable that comes from 			a literal" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexOpenRedirect::3 PageReference open redirect with variable concatenation" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexOpenRedirect::4 PageReference open redirect with variable concatenation 			obtained from a literal" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexOpenRedirect::5 PageReference redirect to literal" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexOpenRedirect::6 PageReference redirect in test class should be ignored" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexOpenRedirect::7 PageReference redirect in test method should be ignored" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexOpenRedirect::8 PageReference to a literal field" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexOpenRedirect::9 Safe pageReference as a field" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexOpenRedirect::10 Unsafe pageReference object" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexOpenRedirect::11 Safe pageReference object" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexOpenRedirect::12 Safe pageReference object concatenation" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexOpenRedirect::13 Static link pageReference object" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexSOQLInjection::0 Potentially unsafe SOQL on concatenation of variables 1" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexSOQLInjection::1 Potentially unsafe SOQL on concatenation of variables 2" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexSOQLInjection::2 Safe SOQL concatenation of hardcoded 			variables" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexSOQLInjection::3 Safe SOQL on concatenation of variables" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexSOQLInjection::4 Safe SOQL + merged variable from a literal" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexSOQLInjection::5 Safe SOQL + merged variable" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexSOQLInjection::6 No issue when SOQL is called" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexSOQLInjection::7 Potentially unsafe SOQL with variable concatenation" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexSOQLInjection::8 Potentially unsafe SOQL with multiple variable 			concatenation" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexSOQLInjection::9 Safe SOQL with List concatenation" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexSOQLInjection::10 SOQL + merged variable from literal" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexSOQLInjection::11 SOQL with merged with field variable" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexSOQLInjection::12 SOQL with merged variable from literal 2" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexSOQLInjection::13 Safe SOQL + merged variable" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexSOQLInjection::14 Unsafe SOQL merged from many variables" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexSharingViolations::0 Apex class without sharing" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexSharingViolations::1 Apex class without any sharing declared with SOQL" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexSharingViolations::2 Apex class without any sharing declared with DML" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexSharingViolations::3 Apex class without any sharing declared with Database 			method" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexSharingViolations::4 Apex class with sharing and Database method" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexSharingViolations::5 Apex class with explicit sharing with DML" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexSharingViolations::6 Apex class with explicit sharing with DML" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexSuggestUsingNamedCred::0 Using basic auth with literal" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexSuggestUsingNamedCred::1 Using basic auth with variable" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexSuggestUsingNamedCred::2 Using named credentials" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexXSSFromEscapeFalse::0 Add error variable with escape false" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexXSSFromEscapeFalse::1 Add error literal with escape false" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexXSSFromEscapeFalse::2 Add error literal and variable with escape false" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexXSSFromURLParam::0 URL parameter in return statement" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexXSSFromURLParam::1 URL parameter in return statement concatenation" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexXSSFromURLParam::2 URL parameter used without being escaped in return 			statement" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexXSSFromURLParam::3 URL parameter used without being escaped in return 			statement concatenation" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexXSSFromURLParam::4 URL parameter used without being escaped in return 			statement concatenation 2" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexXSSFromURLParam::5 Safe URL parameter cast to Integer" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexXSSFromURLParam::6 URL parameter used without being escaped 1" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexXSSFromURLParam::7 URL parameter passed to escaping function" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexXSSFromURLParam::8 URL parameter passed to a function without being escaped" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexXSSFromURLParam::9 URL parameter passed to escaping function and then 			assigned" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexXSSFromURLParam::10 URL parameter passed to a function and then assigned" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexXSSFromURLParam::11 URL parameter used without being escaped 2" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexXSSFromURLParam::12 URL parameter concatenation used without being escaped" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexXSSFromURLParam::13 URL parameter concatenation used without being escaped" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexXSSFromURLParam::14 URL parameter passed to a function" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.019"/>
+  <testcase name="ApexXSSFromURLParam::15 Safe URL parameter passed to a function" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexXSSFromURLParam::16 URL parameter passed to a function with variable 			declaration" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexXSSFromURLParam::17 Safe URL parameter passed to a function with variable 			declaration" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexXSSFromURLParam::18 URL parameter concatenated with variable" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexXSSFromURLParam::19 Safe URL parameter concatenated with variable" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+  <testcase name="ApexXSSFromURLParam::20 URL parameter type casting is a safety check" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexXSSFromURLParam::21 URL parameter type empty check" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexXSSFromURLParam::22 URL parameter type empty check" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexXSSFromURLParam::23 URL parameter method passing" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.004"/>
+  <testcase name="ApexXSSFromURLParam::24 URL parameter var not getting confused with member var" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexXSSFromURLParam::25 Casting applied to a variable" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.003"/>
+  <testcase name="ApexXSSFromURLParam::26 Casting applied to a method call" classname="net.sourceforge.pmd.lang.apex.rule.security.SecurityRulesTest" time="0.002"/>
+</testsuite>
