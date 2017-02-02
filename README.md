@@ -1,5 +1,12 @@
 ### Running PMD  using ANT tasks
 
+What is PMD?
+
+PMD is a source code analyzer. It finds common programming flaws like unused variables, empty catch blocks, unnecessary object creation, and so forth.
+
+
+Here we cover these languages:
+
 - Salesforce Apex
 - Java
 - Javascript
@@ -47,3 +54,9 @@ Total time: 1 seconds
 ```
 
 ![Java Scan output](./demo/js-scanout.png)
+
+<hr/>
+
+Ref:
+
+[PMD](https://pmd.github.io/)
