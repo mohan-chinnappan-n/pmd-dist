@@ -11,7 +11,7 @@
     <taskdef name="pmd" classpathref="lib.path.ref" classname="net.sourceforge.pmd.ant.PMDTask"/>
     <pmd shortFilenames="true">
         <ruleset>rulesets/apex/ruleset.xml</ruleset>
-        <formatter type="html" toFile="pmd_report_apex.html">
+        <formatter type="html" toFile="./out/pmd_report_apex.html">
             <param name="linkPrefix" value="http://pmd.sourceforge.net/xref/"/>
         </formatter>
         <fileset dir="./src/apex/">

@@ -14,7 +14,7 @@
         <ruleset>rulesets/java/unusedcode.xml,rulesets/java/braces.xml,rulesets/java/codesize.xml,rulesets/java/design.xml,rulesets/java/basic.xml,rulesets/java/strings.xml,rulesets/java/optimizations.xml,rulesets/java/j2ee.xml,rulesets/java/finalizers.xml,rulesets/java/javabeans.xml,rulesets/java/clone.xml,rulesets/java/naming.xml,rulesets/java/imports.xml,rulesets/java/junit.xml
         </ruleset>
         <ruleset>java-basic</ruleset>
-        <formatter type="html" toFile="pmd_report_java.html">
+        <formatter type="html" toFile="./out/pmd_report_java.html">
             <param name="linkPrefix" value="http://pmd.sourceforge.net/xref/"/>
         </formatter>
         <fileset dir="./src/java/">
