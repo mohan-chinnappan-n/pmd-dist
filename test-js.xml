@@ -1,21 +1,22 @@
 <project name="codeScanProject_js" default="pmd" basedir=".">
-  <description>PMD code scan for js </description>
+    <description>PMD code scan for js
+    </description>
+    <property file="pmd.properties"/>
 
-<path id="lib.path.ref">
-    <fileset dir="./lib" includes="*.jar"/>
- </path>
+    <path id="lib.path.ref">
+        <fileset dir="./lib" includes="*.jar"/>
+    </path>
 
-<target name="pmd" >
-    <taskdef name="pmd" classpathref="lib.path.ref" classname="net.sourceforge.pmd.ant.PMDTask"/>
-    <pmd shortFilenames="true">
-        <ruleset>rulesets/ecmascript/basic.xml,rulesets/ecmascript/braces.xml,rulesets/ecmascript/unnecessary.xml,rulesets/ecmascript/controversial.xml
-        </ruleset>
-        <formatter type="html" toFile="./out/pmd_report_js.html">
-            <param name="linkPrefix" value="http://pmd.sourceforge.net/xref/"/>
-        </formatter>
-        <fileset dir="./src/js/">
-            <include name="*.js"/>
-        </fileset>
-    </pmd>
-</target>
+    <target name="pmd">
+        <taskdef name="pmd" classpathref="lib.path.ref" classname="net.sourceforge.pmd.ant.PMDTask"/>
+        <pmd shortFilenames="true">
+            <ruleset>${rulesets.js}</ruleset>
+            <formatter type="html" toFile="${out.file.java}">
+                <param name="linkPrefix" value="http://pmd.sourceforge.net/xref/"/>
+            </formatter>
+            <fileset dir="${src.folder.js}">
+                <include name="*.js"/>
+            </fileset>
+        </pmd>
+    </target>
 </project>

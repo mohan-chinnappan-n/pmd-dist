@@ -1,21 +1,23 @@
 <project name="codeScanProject_apex" default="pmd" basedir=".">
-  <description>PMD code scan for Salesforce Apex </description>
+    <description>PMD code scan for Salesforce Apex
+    </description>
 
+    <property file="pmd.properties"/>
 
-<path id="lib.path.ref">
-    <fileset dir="./lib" includes="*.jar"/>
- </path>
+    <path id="lib.path.ref">
+        <fileset dir="./lib" includes="*.jar"/>
+    </path>
 
-<target name="pmd" >
-    <taskdef name="pmd" classpathref="lib.path.ref" classname="net.sourceforge.pmd.ant.PMDTask"/>
-    <pmd shortFilenames="true">
-        <ruleset>rulesets/apex/ruleset.xml</ruleset>
-        <formatter type="html" toFile="./out/pmd_report_apex.html">
-            <param name="linkPrefix" value="http://pmd.sourceforge.net/xref/"/>
-        </formatter>
-        <fileset dir="./src/apex/">
-            <include name="*.cls"/>
-        </fileset>
-    </pmd>
-</target>
+    <target name="pmd">
+        <taskdef name="pmd" classpathref="lib.path.ref" classname="net.sourceforge.pmd.ant.PMDTask"/>
+        <pmd shortFilenames="true">
+            <ruleset>${rulesets.apex}</ruleset>
+            <formatter type="html" toFile="${out.file.apex}">
+                <param name="linkPrefix" value="http://pmd.sourceforge.net/xref/"/>
+            </formatter>
+            <fileset dir="${src.folder.apex}">
+                <include name="*.cls"/>
+            </fileset>
+        </pmd>
+    </target>
 </project>

@@ -1,24 +1,26 @@
 <project name="codeScanProject_java" default="pmd" basedir=".">
-  <description>PMD code scan for java </description>
+    <description>PMD code scan for java
+    </description>
 
+    <property file="pmd.properties"/>
 
-<path id="lib.path.ref">
-    <fileset dir="./lib" includes="*.jar"/>
- </path>
+    <path id="lib.path.ref">
+        <fileset dir="./lib" includes="*.jar"/>
+    </path>
 
-<target name="pmd" >
-    <taskdef name="pmd" classpathref="lib.path.ref" classname="net.sourceforge.pmd.ant.PMDTask"/>
-    <pmd shortFilenames="true">
-        <sourceLanguage name="java" version="1.6"/>
-        <ruleset>rulesets/java/unusedcode.xml,rulesets/java/braces.xml,rulesets/java/codesize.xml,rulesets/java/design.xml,rulesets/java/basic.xml,rulesets/java/strings.xml,rulesets/java/optimizations.xml,rulesets/java/j2ee.xml,rulesets/java/finalizers.xml,rulesets/java/javabeans.xml,rulesets/java/clone.xml,rulesets/java/naming.xml,rulesets/java/imports.xml,rulesets/java/junit.xml
-        </ruleset>
-        <ruleset>java-basic</ruleset>
-        <formatter type="html" toFile="./out/pmd_report_java.html">
-            <param name="linkPrefix" value="http://pmd.sourceforge.net/xref/"/>
-        </formatter>
-        <fileset dir="./src/java/">
-            <include name="*.java"/>
-        </fileset>
-    </pmd>
-</target>
+    <target name="pmd">
+        <taskdef name="pmd" classpathref="lib.path.ref" classname="net.sourceforge.pmd.ant.PMDTask"/>
+        <pmd shortFilenames="true">
+            <sourceLanguage name="java" version="1.6"/>
+            <ruleset>${rulesets.java}</ruleset>
+            <!-- <ruleset>java-basic</ruleset> -->
+            <formatter type="html" toFile="${out.file.java}">
+                <param name="linkPrefix" value="http://pmd.sourceforge.net/xref/"/>
+            </formatter>
+            <fileset dir="${src.folder.java}">
+                <include name="*.java"/>
+            </fileset>
+
+        </pmd>
+    </target>
 </project>
