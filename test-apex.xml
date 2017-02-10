@@ -15,6 +15,11 @@
             <formatter type="html" toFile="${out.file.apex}">
                 <param name="linkPrefix" value="http://pmd.sourceforge.net/xref/"/>
             </formatter>
+
+            <formatter type="csv" toFile="${out.file.csv.apex}">
+                <param name="linkPrefix" value="http://pmd.sourceforge.net/xref/"/>
+            </formatter>
+
             <fileset dir="${src.folder.apex}">
                 <include name="*.cls"/>
             </fileset>
