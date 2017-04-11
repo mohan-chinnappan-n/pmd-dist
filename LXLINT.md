@@ -4,15 +4,18 @@
 1. Install (**one time**): salesforce-lightning-cli from:
   [Here](https://www.npmjs.com/package/salesforce-lightning-cli) 
 
--------------
 
 2. Plugin source folder for Lightning code in : 
-```bash
+
+```
      $ cat lxlint.properties 
      src.folder.lx=/Users/mchinnappan/Documents/workspace/org_10/src/aura
 
+```
 
-3. Run this ant task: lxlint :
+3.Run this ant task: lxlint :
+
+```
 
 $ ant -f test-lx.xml 
 Buildfile: /Users/mchinnappan/code-scan-tools/pmd-dist/test-lx.xml
