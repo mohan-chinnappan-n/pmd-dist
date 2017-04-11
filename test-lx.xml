@@ -1,0 +1,10 @@
+<project name="lighting linter" default="lxlint" basedir=".">
+    <description>Lightning Linter for Salesforce</description>
+    <property file="lxlint.properties"/>
+    <target name="lxlint">
+     <exec executable="heroku"> 
+        <arg value="lightning:lint"/>
+        <arg value="${src.folder.lx}"/>
+     </exec>
+    </target>
+</project>
