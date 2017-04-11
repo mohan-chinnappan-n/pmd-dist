@@ -15,7 +15,7 @@
 
 2. Run this ant task **lxlint**:
 
-```
+```bash
 $ ant -f test-lx.xml 
 Buildfile: /Users/mchinnappan/code-scan-tools/pmd-dist/test-lx.xml
 
