@@ -1,7 +1,7 @@
 ### Lightning Linter ANT task
 
 #### Steps:
-1. Install (one time): https://www.npmjs.com/package/salesforce-lightning-cli from:
+1. Install (**one time**): salesforce-lightning-cli from:
   [Lighting Linter CLI](https://www.npmjs.com/package/salesforce-lightning-cli) 
 
 -------------
@@ -13,7 +13,7 @@
   ```
 
 
-2. Run this ant task **lxlint**:
+3. Run this ant task **lxlint**:
 
 ```bash
 $ ant -f test-lx.xml 
