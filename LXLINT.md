@@ -7,7 +7,7 @@
 -------------
 
 2. Plugin source folder for Lightning code in : 
-   ``` bash
+   ```bash
      $ cat lxlint.properties 
      src.folder.lx=/Users/mchinnappan/Documents/workspace/org_10/src/aura
   ```
