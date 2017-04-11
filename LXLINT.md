@@ -2,7 +2,7 @@
 
 #### Steps:
 1. Install (**one time**): salesforce-lightning-cli from:
-  [Lighting Linter CLI](https://www.npmjs.com/package/salesforce-lightning-cli) 
+  [Here](https://www.npmjs.com/package/salesforce-lightning-cli) 
 
 -------------
 
