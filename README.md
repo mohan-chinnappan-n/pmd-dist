@@ -57,6 +57,10 @@ Total time: 1 seconds
 
 <hr/>
 
+### How about Lightning code linting?
+
+[Here](./LXLINT.md) it is!
+
 Ref:
 Standing on the shoulders of:
 
