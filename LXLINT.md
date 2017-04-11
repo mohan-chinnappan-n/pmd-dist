@@ -13,7 +13,7 @@
   ```
 
 
-3. Run this ant task **lxlint**:
+3. Run this ant task: lxlint :
 
 ```bash
 $ ant -f test-lx.xml 
