@@ -1,4 +1,4 @@
-<project name="lighting linter" default="lxlint" basedir=".">
+<project name="lightning linter" default="lxlint" basedir=".">
     <description>Lightning Linter for Salesforce</description>
     <property file="lxlint.properties"/>
     <target name="lxlint">
