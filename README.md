@@ -66,4 +66,14 @@ Standing on the shoulders of:
 ### How about Lightning code linting?
 [Here](./LXLINT.md) it is!
 
+### Resources
 
+- [Trailhead: Discover Built-in XSS Protections in Lightning Platform](https://trailhead.salesforce.com/modules/secdev_injection_vulnerabilities/units/secdev_inject_built_in_xss_protections)
+
+- [Trailhead: Injection Vulnerability Prevention](https://trailhead.salesforce.com/modules/secdev_injection_vulnerabilities)
+
+- [Cross Site Scripting (XSS)](https://developer.salesforce.com/docs/atlas.en-us.pages.meta/pages/pages_security_tips_xss.htm)
+
+- [Secure Coding Cross Site Scripting](https://developer.salesforce.com/page/Secure_Coding_Cross_Site_Scripting)
+
+- [Salesforce Platform Security FAQs](https://help.salesforce.com/articleView?id=Salesforce-Platform-Security-FAQs&language=en_US&type=1)
