@@ -66,6 +66,8 @@ Standing on the shoulders of:
 ### How about Lightning code linting?
 [Here](./LXLINT.md) it is!
 
+<hr/>
+
 ### Resources
 
 - [Trailhead: Discover Built-in XSS Protections in Lightning Platform](https://trailhead.salesforce.com/modules/secdev_injection_vulnerabilities/units/secdev_inject_built_in_xss_protections)
