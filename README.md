@@ -79,3 +79,6 @@ Standing on the shoulders of:
 - [Secure Coding Cross Site Scripting](https://developer.salesforce.com/page/Secure_Coding_Cross_Site_Scripting)
 
 - [Salesforce Platform Security FAQs](https://help.salesforce.com/articleView?id=Salesforce-Platform-Security-FAQs&language=en_US&type=1)
+
+- [Force.com Source Scanner Portal](https://security.secure.force.com/security/tools/forcecom/scanner)
+
