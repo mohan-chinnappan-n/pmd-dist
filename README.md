@@ -90,4 +90,7 @@ Standing on the shoulders of:
 
 - [Howto add a new language to PMD](http://pmd.sourceforge.net/pmd-5.3.2/customizing/new-language.html)
 
+- [Rules that flag potential security flaws](http://pmd.sourceforge.net/snapshot/pmd_rules_apex_security.html)
+
+- [How to reuse ApexParser for static code analysis tool? ][https://github.com/forcedotcom/idecore/issues/167]
 
