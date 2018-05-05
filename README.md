@@ -82,3 +82,7 @@ Standing on the shoulders of:
 
 - [Force.com Source Scanner Portal](https://security.secure.force.com/security/tools/forcecom/scanner)
 
+- [Apex Parser embedded in the IDE ](https://github.com/forcedotcom/idecore/tree/master/com.salesforce.ide.apex.core/lib)
+
+- [Apex Jorje Parser library](https://github.com/anand13s/pmd/tree/master/pmd-apex/repo)
+
