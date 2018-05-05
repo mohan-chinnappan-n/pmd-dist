@@ -92,5 +92,5 @@ Standing on the shoulders of:
 
 - [Rules that flag potential security flaws](http://pmd.sourceforge.net/snapshot/pmd_rules_apex_security.html)
 
-- [How to reuse ApexParser for static code analysis tool? ][https://github.com/forcedotcom/idecore/issues/167]
+- [How to reuse ApexParser for static code analysis tool?](https://github.com/forcedotcom/idecore/issues/167)
 
