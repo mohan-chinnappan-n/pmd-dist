@@ -92,5 +92,18 @@ Standing on the shoulders of:
 
 - [Rules that flag potential security flaws](http://pmd.sourceforge.net/snapshot/pmd_rules_apex_security.html)
 
+- [Rules which enforce generally accepted best practices](http://pmd.sourceforge.net/snapshot/pmd_rules_apex_bestpractices.html)
+
+- [Rules which enforce a specific coding style](http://pmd.sourceforge.net/snapshot/pmd_rules_apex_codestyle.html)
+
+- [Rules that help you discover design issues](http://pmd.sourceforge.net/snapshot/pmd_rules_apex_design.html)
+
+- [Rules to detect constructs that are either broken, extremely confusing or prone to runtime errors](http://pmd.sourceforge.net/snapshot/pmd_rules_apex_errorprone.html)
+
+- [Rules that flag suboptimal code](http://pmd.sourceforge.net/snapshot/pmd_rules_apex_performance.html)
+
+
+
+
 - [How to reuse ApexParser for static code analysis tool?](https://github.com/forcedotcom/idecore/issues/167)
 
