@@ -87,3 +87,7 @@ Standing on the shoulders of:
 - [Apex Jorje Parser library](https://github.com/anand13s/pmd/tree/master/pmd-apex/repo)
 
 - [ApexJorjeExample](https://github.com/vazexqi/ApexJorjeExample)
+
+- [Howto add a new language to PMD](http://pmd.sourceforge.net/pmd-5.3.2/customizing/new-language.html)
+
+
