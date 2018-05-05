@@ -90,6 +90,8 @@ Standing on the shoulders of:
 
 - [Howto add a new language to PMD](http://pmd.sourceforge.net/pmd-5.3.2/customizing/new-language.html)
 
+<hr/>
+
 - [Rules that flag potential security flaws](http://pmd.sourceforge.net/snapshot/pmd_rules_apex_security.html)
 
 - [Rules which enforce generally accepted best practices](http://pmd.sourceforge.net/snapshot/pmd_rules_apex_bestpractices.html)
