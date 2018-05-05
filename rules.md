@@ -3,7 +3,7 @@
 ### Sample Rule: ```Method names should not contain underscores```
 
 - PMD gets method Name: ```String methodName = node.getImage();```
-- Checks the methodName for starting-with-capital-letters
+- Checks the ```methodName``` for starting-with-capital-letters
 - Checks for the '_' in the ```methodName```
 - CODECLIMATE_CATEGORIES for this issue: ```'Style'```
 
