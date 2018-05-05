@@ -1,11 +1,11 @@
 # How PMD Apex Rules work
 
-### Sample Rule: Method names should not contain underscores
+### Sample Rule: ```Method names should not contain underscores```
 
-- PMD gets method Name: String methodName = node.getImage();
+- PMD gets method Name: ```String methodName = node.getImage();```
 - Checks the methodName for starting-with-capital-letters
-- Checks for the '_' in the methodName
-- CODECLIMATE_CATEGORIES for this issue: 'Style'
+- Checks for the '_' in the ```methodName```
+- CODECLIMATE_CATEGORIES for this issue: ```'Style'```
 
 - Refer: [MethodNamingConventionsRule](http://pmd.sourceforge.net/pmd-5.5.3/pmd-apex/xref/net/sourceforge/pmd/lang/apex/rule/style/MethodNamingConventionsRule.html)
 
